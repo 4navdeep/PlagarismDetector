@@ -2,9 +2,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class s40237981detector {
+public class Detector {
     List<String> keywords = new ArrayList<>();
-    s40237981detector()
+    Detector()
     {
 
         keywords.add("system.out.println(");
@@ -116,7 +116,7 @@ public class s40237981detector {
     }
 
     public static void main(String[] args) {
-        s40237981detector d = new s40237981detector();
+        Detector d = new Detector();
         String file1 = args[0];
         String file2 = args[1];
         System.out.println(d.checkplag(file1, file2));
